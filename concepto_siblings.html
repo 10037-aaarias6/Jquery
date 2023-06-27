@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>JQuery - Traversing Siblings</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: TheEvent
+  * Updated: Jun 18 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center header-inner">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+        <a href="index.html" class="scrollto"><img src="assets/img/logo.png" alt="" title=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html">Inicio</a></li>
+        
+         
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main" class="main-page">
+
+    <!-- ======= Speaker Details Sectionn ======= -->
+    <section id="speakers-details">
+      <div class="container">
+        <div class="section-header">
+          <h2>¿Qué es?</h2>
+          <p>Adentrate sobre el concepto básico de Siblings</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <img src="assets/img/speakers/1.1.png" alt="Speaker 1" class="img-fluid">
+          </div>
+
+          <div class="col-md-6">
+            <div class="details">
+              <h2>Método Siblings():</h2>
+         
+              <p>Podemos atravesar los lados en el árbol Dom con la ayuda de jQuery y encontrar los hermanos de un elemento.</p>
+              <p>Los elementos hermanos comparten el mismo padre.</p>
+              <h2>Traversing Sideways</h2>
+              <p>Los métodos jQuery para recorrer los laterales en el árbol dom son:</p>
+
+              <li>siblings()</li>
+              <li>next() & nextAll()</li>
+              <li>nextUntill()</li>
+              <li>prev() & prevAll()</li>
+              <li>prevUntil()</li>
+              <br>
+              <h2>Siblings</h2>
+              <p>El siblings() es un método incorporado en jQuery que se utiliza para encontrar todos los elementos hermanos del elemento seleccionado.</p>
+              <p>Su Sintaxis es:</p>
+              <p>$(selector).siblings(function)</p>
+              <h2>Ejemplo:</h2>
+        <div class="docs-code-block">
+          <pre class="shadow-lg rounded"><code class="javascript hljs">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              
+            &lt;head&gt;
+                &lt;style&gt;
+                    .block {
+                        display: block;
+                        border: 1px solid black;
+                        padding: 10px;
+                        color: black;
+                    }
+                &lt;/style&gt;
+                &lt;script src=
+            "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"&gt;
+              &lt;/script&gt;
+                &lt;script&gt;
+                    $(document).ready(function() {
+                        $("h3").siblings().css({
+                            "color": "green",
+                            "border": "3px solid green"
+                        });
+                    });
+                &lt;/script&gt;
+            &lt;/head&gt;
+              
+            &lt;body&gt;
+                &lt;div class="block"&gt;
+                    &lt;h2 class="block"&gt;Geeks&lt;/h2&gt;
+                    &lt;h3 class="block"&gt;for&lt;/h3&gt;
+                    &lt;h4 class="block"&gt;Geeks&lt;/h4&gt;
+                &lt;/div&gt;
+            &lt;/body&gt;
+              
+            &lt;/html&gt;
+            
+
+
+            </code></pre>
+        </div>
+
+      <h2>Resultado</h2>                 
+        <div>
+          <img src="assets/img/EJ6.png" alt="Speaker 1" class="img-fluid">
+
+        </div>
+        <br>
+        <h2>Método Next():</h2>
+              <p>El next() es una función incorporada en jQuery que se utiliza para devolver el siguiente hermano del elemento seleccionado.</p>
+              <p>Su Sintaxis es:</p>
+              <p>$(selector).next()</p>
+              <h2>Ejemplo:</h2>
+        <div class="docs-code-block">
+          <pre class="shadow-lg rounded"><code class="javascript hljs">
+            &lt;html&gt;
+  
+            &lt;head&gt;
+                &lt;style&gt;
+                    .next * {
+                        display: block;
+                        border: 2px solid lightgrey;
+                        color: black;
+                        padding: 5px;
+                        margin: 15px;
+                    }
+                &lt;/style&gt;
+                &lt;script src=
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;
+              &lt;/script&gt;
+                &lt;script&gt;
+                    $(document).ready(function() {
+                        $("h3").next().css({
+                            "color": "black",
+                            "border": "2px solid green"
+                        });
+                    });
+                &lt;/script&gt;
+            &lt;/head&gt;
+              
+            &lt;body class="next"&gt;
+                &lt;div&gt;
+                    This is parent element !
+                    &lt;p&gt;This is first paragraph
+                  &lt;/p&gt;
+                    &lt;span&gt;first span box &lt;/span&gt;
+                    &lt;h2&gt;heading 2 !&lt;/h2&gt;
+                    &lt;h3&gt;heading 3 !&lt;/h3&gt;
+                    &lt;p&gt;This is the second paragraph
+                      and next sibling to h3 !&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/body&gt;
+              
+            &lt;/html&gt;
+
+
+            </code></pre>
+        </div>
+
+      <h2>Resultado</h2>                 
+        <div>
+          <img src="assets/img/EJ7.png" alt="Speaker 1" class="img-fluid">
+
+        </div>
+
+
+
+
+
+        <br>
+        <h2>Método nextUntil():</h2>
+              <p>El nextUntil() es un método incorporado en jQuery que se utiliza para encontrar todos los elementos hermanos entre dos elementos dados.</p>
+              <p>Su Sintaxis es:</p>
+              <p>$(selector1).nextUntil(selector2)</p>
+              <h2>Ejemplo:</h2>
+        <div class="docs-code-block">
+          <pre class="shadow-lg rounded"><code class="javascript hljs">
+            &lt;html&gt;
+  
+            &lt;head&gt;
+                &lt;style&gt;
+                    .bet_sib * {
+                        display: block;
+                        border: 2px solid lightgrey;
+                        color: black;
+                        padding: 5px;
+                        margin: 15px;
+                    }
+                &lt;/style&gt;
+                &lt;script src="https://ajax.googleapis.com/ajax/libs/
+                            jquery/3.3.1/jquery.min.js"&gt;&lt;/script&gt;
+                &lt;script&gt;
+                    $(document).ready(function() {
+                        $("span").nextUntil("p").css({
+                            "color": "black",
+                            "border": "2px solid green"
+                        });
+                    });
+                &lt;/script&gt;
+            &lt;/head&gt;
+              
+            &lt;body class="bet_sib"&gt;
+                &lt;div&gt;
+                    This is the parent element !!!
+                    &lt;p&gt;This is first paragraph!&lt;/p&gt;
+                    &lt;span&gt;first span box !&lt;/span&gt;
+                    &lt;h2&gt;heading 2!&lt;/h2&gt;
+                    &lt;h3&gt;heading 3!&lt;/h3&gt;
+                    &lt;h4&gt;heading 4!&lt;/h4&gt;
+                    &lt;h5&gt;heading 5!&lt;/h5&gt;
+                    &lt;h6&gt;heading 6!&lt;/h6&gt;
+                    &lt;p&gt;This is second paragraph!&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/body&gt;
+              
+            &lt;/html&gt;
+
+
+            </code></pre>
+        </div>
+
+      <h2>Resultado</h2>                 
+        <div>
+          <img src="assets/img/EJ8.png" alt="Speaker 1" class="img-fluid">
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <br>
+        <h2>Método prev() & prevAll():</h2>
+              <p>El prev() es una función incorporada en jQuery que se utiliza para devolver el elemento hermano anterior del elemento seleccionado.</p>
+              <p>Su Sintaxis es:</p>
+              <p>$(selector).prev()</p>
+              <p>Por otro lado, el prevAll() es un método incorporado en jQuery que se utiliza para devolver todos los elementos hermanos anteriores del elemento seleccionado. </p>
+              <p>Su Sintaxis es:</p>
+              <p>$(selector).prevAll()</p>
+              <h2>Ejemplo con prev():</h2>
+        <div class="docs-code-block">
+          <pre class="shadow-lg rounded"><code class="javascript hljs">
+            
+            &lt;html&gt;
+ 
+            &lt;html&gt;
+ 
+            &lt;head&gt;
+                &lt;style&gt;
+                    .pre * {
+                        display: block;
+                        border: 2px solid lightgrey;
+                        color: black;
+                        padding: 5px;
+                        margin: 15px;
+                    }
+                &lt;/style&gt;
+                &lt;script src="https://ajax.googleapis.com/ajax/libs/
+                             jquery/3.3.1/jquery.min.js"&gt;&lt;/script&gt;
+                &lt;script&gt;
+                    $(document).ready(function() {
+                        $("h3").prev().css({
+                            "color": "black",
+                            "border": "2px solid green"
+                        });
+                    });
+                &lt;/script&gt;
+            &lt;/head&gt;
+             
+            &lt;body class="pre"&gt;
+                &lt;div&gt;
+                    This is parent element !
+                    &lt;p&gt;This is first paragraph &lt;/p&gt;
+                    &lt;span&gt;First span box &lt;/span&gt;
+                    &lt;h2&gt;heading 2 !&lt;/h2&gt;
+                    &lt;h3&gt;heading 3 !&lt;/h3&gt;
+                    &lt;p&gt;This is the second paragraph and next sibling to h3 !&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/body&gt;
+             
+            &lt;/html&gt;
+
+            </code></pre>
+        </div>
+
+      <h2>Resultado</h2>                 
+        <div>
+          <img src="assets/img/EJ9.png" alt="Speaker 1" class="img-fluid">
+
+        </div>
+
+
+
+
+        <h2>Ejemplo con prevAll():</h2>
+        <div class="docs-code-block">
+          <pre class="shadow-lg rounded"><code class="javascript hljs">
+            &lt;html&gt;
+ 
+            &lt;head&gt;
+                &lt;style&gt;
+                    .prevAll * {
+                        display: block;
+                        border: 2px solid lightgrey;
+                        color: black;
+                        padding: 5px;
+                        margin: 15px;
+                    }
+                &lt;/style&gt;
+                &lt;script src="https://ajax.googleapis.com/ajax/libs/
+                            jquery/3.3.1/jquery.min.js"&gt;&lt;/script&gt;
+                &lt;script&gt;
+                    $(document).ready(function() {
+                        $("h3").prevAll().css({
+                            "color": "black",
+                            "border": "2px solid green"
+                        });
+                    });
+                &lt;/script&gt;
+            &lt;/head&gt;
+            
+            &lt;body class="prevAll"&gt;
+                &lt;div&gt;
+                    This is parent element !
+                    &lt;p&gt;This is first paragraph &lt;/p&gt;
+                    &lt;span&gt;first span box &lt;/span&gt;
+                    &lt;h2&gt;heading 2 !&lt;/h2&gt;
+                    &lt;h3&gt;heading 3 !&lt;/h3&gt;
+                    &lt;p&gt;This is the second paragraph and next
+                          sibling to h3 !&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/body&gt;
+            
+            &lt;/html&gt;
+
+
+            </code></pre>
+        </div>
+
+      <h2>Resultado</h2>                 
+        <div>
+          <img src="assets/img/EJ10.png" alt="Speaker 1" class="img-fluid">
+
+        </div>
+
+
+
+
+        <br>
+        <h2>Método prevUntil():</h2>
+              <p>El prevUntil() es un método incorporado en jQuery que se utiliza para encontrar todos los elementos hermanos anteriores entre dos elementos dados.</p>
+              <p>Su Sintaxis es:</p>
+              <p>$(selector1).nextUntil(selector2)</p>
+              <h2>Ejemplo:</h2>
+        <div class="docs-code-block">
+          <pre class="shadow-lg rounded"><code class="javascript hljs">
+            &lt;html&gt;
+  
+            &lt;head&gt;
+                &lt;style&gt;
+                    .sib * {
+                        display: block;
+                        border: 2px solid lightgrey;
+                        color: black;
+                        padding: 5px;
+                        margin: 15px;
+                    }
+                &lt;/style&gt;
+                &lt;script src="https://ajax.googleapis.com/ajax/libs/
+                      jquery/3.3.1/jquery.min.js"&gt;&lt;/script&gt;
+                &lt;script&gt;
+                    $(document).ready(function() {
+                        $("li.start").prevUntil("li.stop").css({
+                            "color": "black",
+                            "border": "2px solid green"
+                        });
+                    });
+                &lt;/script&gt;
+            &lt;/head&gt;
+              
+            &lt;body&gt;
+                &lt;div style="width:400px;" class="sib"&gt;
+                    &lt;ul&gt;
+                        This is parent !!!
+                        &lt;li class="stop"&gt;list 1 !!!&lt;/li&gt;
+                        &lt;li&gt;first list !&lt;/li&gt;
+                        &lt;li&gt;second list !&lt;/li&gt;
+                        &lt;li&gt;third list !&lt;/li&gt;
+                        &lt;li&gt;fourth list !&lt;/li&gt;
+                        &lt;li&gt;fifth list !&lt;/li&gt;
+                        &lt;li class="start"&gt;list 7 !!!&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/body&gt;
+              
+            &lt;/html&gt;
+
+
+            </code></pre>
+        </div>
+
+      <h2>Resultado</h2>                 
+        <div>
+          <img src="assets/img/EJ11.png" alt="Speaker 1" class="img-fluid">
+
+        </div>
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main><!-- End #main -->
+
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

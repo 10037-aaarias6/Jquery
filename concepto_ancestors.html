@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>JQuery - Ancestors</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: TheEvent
+  * Updated: Jun 18 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <style>
+    .ancestors * { 
+      display: block;
+      border: 2px solid lightgrey;
+      color: lightgrey;
+      padding: 5px;
+      margin: 15px;
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $(".highlight").parent().css({"color": "red", "border": "2px solid red"});
+    });
+    </script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center header-inner">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+        <a href="index.html" class="scrollto"><img src="assets/img/logo.png" alt="" title=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html">Inicio</a></li>
+       
+          
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main" class="main-page">
+
+    <!-- ======= Speaker Details Sectionn ======= -->
+    <section id="speakers-details">
+      <div class="container">
+        <div class="section-header">
+          <h2>¿Qué es?</h2>
+          <p>Adentrate sobre el concepto básico de Ancestors</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <img src="assets/img/speakers/1.1.png" alt="Speaker 1" class="img-fluid">
+          </div>
+
+          <div class="col-md-6">
+            <div class="details">
+              <h2>Ancestors</h2>
+         
+              <p>En jQuery, el traversing (traspaso) se refiere a la capacidad de moverse a través de los elementos HTML y acceder a elementos específicos dentro de una estructura de documentos HTML. El método <b>.ancestors()</b> es utilizado para seleccionar los ancestros de los elementos en el árbol DOM.</p>
+
+              <p>La sintaxis básica del método <b>.ancestors()</b> es la siguiente:</p>
+              <p>$(document).ready(function(){</p>
+              <p>$("span").parent().css({"color": " ", "border": " "});</p>
+              <p>});</p>
+              <h2>Atravesando el árbol DOM</h2>
+              <p>Tres métodos útiles de jQuery para recorrer el árbol DOM son:</p>
+              <li><b>parent(): </b>Se utiliza para devolver el elemento padre directo del elemento seleccionado dado.</li>
+              <li><b>parents(): </b>Se utiliza para devolver todos los elementos ancestros del elemento seleccionado dado hasta el elemento raíz.</li>
+              <li><b>parentsUntil(): </b>Se utiliza para devolver todos los elementos ancestros entre dos argumentos dados.</li>
+              <br>
+
+
+              <h2>Ejemplo (método parent()):</h2>
+              <div class="docs-code-block">
+                <pre class="shadow-lg rounded"><code class="javascript hljs">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                    
+                  &lt;head&gt;
+                      &lt;style&gt;
+                          .ancestors * {
+                              display: block;
+                              border: 2px solid lightgreen;
+                              color: green;
+                              padding: 10px;
+                              margin: 5px;
+                          }
+                      &lt;/style&gt;
+                    
+                      &lt;script src=
+                  "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;
+                      &lt;/script&gt;
+                      &lt;script&gt;
+                          $(document).ready(function() {
+                              $("span").parent().css({
+                                  "color": "green",
+                                  "border": "4px solid black"
+                              });
+                          });
+                      &lt;/script&gt;
+                  &lt;/head&gt;
+                    
+                  &lt;body class="ancestors"&gt;great-great-grandparent
+                      &lt;div style="width:500px;"&gt;great-grandparent
+                          &lt;ul&gt;grandparent
+                              &lt;ul&gt;direct parent
+                                  &lt;span&gt;
+                                    &lt;h1&gt;
+                                      &lt;li&gt;
+                                      &lt;center&gt;
+                                        GeeksforGeeks
+                                      &lt;/center&gt; 
+                                      &lt;/li&gt; 
+                                  &lt;/h1&gt;
+                                &lt;/span&gt;
+                              &lt;/ul&gt;
+                          &lt;/ul&gt;
+                      &lt;/div&gt;
+                  &lt;/body&gt;
+                    
+                  &lt;/html&gt;
+                  &lt;/html&gt;
+
+
+
+                  </code></pre>
+              </div>
+
+      <h2>Resultado</h2>                 
+        <div>
+          <img src="assets/img/EJ1.png" alt="Speaker 1" class="img-fluid">
+
+        </div>
+        <br>
+        <br>
+
+        <h2>Ejemplo (método parents()):</h2>
+              <div class="docs-code-block">
+                <pre class="shadow-lg rounded"><code class="javascript hljs">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                    
+                  &lt;head&gt;
+                      &lt;style&gt;
+                          .ancestors * {
+                              display: block;
+                              border: 2px solid lightgreen;
+                              color: green;
+                              padding: 10px;
+                              margin: 5px;
+                          }
+                      &lt;/style&gt;
+                    
+                      &lt;script src=
+                  "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;
+                      &lt;/script&gt;
+                      &lt;script&gt;
+                          $(document).ready(function() {
+                              $("span").parents().css({
+                                  "color": "green",
+                                  "border": "4px solid black"
+                              });
+                          });
+                      &lt;/script&gt;
+                  &lt;/head&gt;
+                    
+                  &lt;body class="ancestors"&gt;great-great-grandparent
+                      &lt;div style="width:500px;"&gt;great-grandparent
+                          &lt;ul&gt;grandparent
+                              &lt;ul&gt;direct parent
+                                  &lt;li&gt;
+                                      &lt;span&gt;
+                                    &lt;h1&gt;
+                                      &lt;center&gt;
+                                        GeeksforGeeks
+                                      &lt;/center&gt;
+                                    &lt;/h1&gt;
+                                &lt;/span&gt;
+                                  &lt;/li&gt;
+                              &lt;/ul&gt;
+                          &lt;/ul&gt;
+                      &lt;/div&gt;
+                  &lt;/body&gt;
+                    
+                  &lt;/html&gt;
+                  
+
+
+                  </code></pre>
+              </div>
+
+      <h2>Resultado</h2>                 
+        <div>
+          <img src="assets/img/EJ2.png" alt="Speaker 1" class="img-fluid">
+
+        </div>
+
+
+        <h2>Ejemplo (método parentsUntil()):</h2>
+        <div class="docs-code-block">
+          <pre class="shadow-lg rounded"><code class="javascript hljs">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              
+            &lt;head&gt;
+                &lt;style&gt;
+                    .ancestors * {
+                        display: block;
+                        border: 2px solid lightgreen;
+                        color: green;
+                        padding: 10px;
+                        margin: 5px;
+                    }
+                &lt;/style&gt;
+              
+                &lt;script src=
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;
+                &lt;/script&gt;
+                &lt;script&gt;
+                    $(document).ready(function() {
+                        $("span").parentsUntil().css({
+                            "color": "green",
+                            "border": "4px solid black"
+                        });
+                    });
+                &lt;/script&gt;
+            &lt;/head&gt;
+              
+            &lt;body class="ancestors"&gt;great-great-grandparent
+                &lt;div style="width:500px;"&gt;great-grandparent
+                    &lt;ul&gt;grandparent
+                        &lt;ul&gt;direct parent
+                            &lt;li&gt;
+                                &lt;span&gt;
+                              &lt;h1&gt;
+                                &lt;center&gt;
+                                  GeeksforGeeks
+                                &lt;/center&gt;
+                              &lt;/h1&gt;
+                          &lt;/span&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/body&gt;
+              
+            &lt;/html&gt;
+            
+
+
+            </code></pre>
+        </div>
+
+      <h2>Resultado</h2>                 
+        <div>
+          <img src="assets/img/EJ3.png" alt="Speaker 1" class="img-fluid">
+
+        </div>
+
+
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main><!-- End #main -->
+
+ 
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

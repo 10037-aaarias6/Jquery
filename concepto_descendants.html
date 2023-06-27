@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>JQuery - Descendants</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: TheEvent
+  * Updated: Jun 18 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center header-inner">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+        <a href="index.html" class="scrollto"><img src="assets/img/logo.png" alt="" title=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html">Inicio</a></li>
+          
+         
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main" class="main-page">
+
+    <!-- ======= Speaker Details Sectionn ======= -->
+    <section id="speakers-details">
+      <div class="container">
+        <div class="section-header">
+          <h2>¿Qué es?</h2>
+          <p>Adentrate sobre el concepto básico de Descendants</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <img src="assets/img/speakers/1.1.png" alt="Speaker 1" class="img-fluid">
+          </div>
+
+          <div class="col-md-6">
+            <div class="details">
+              <h2>Descendants</h2>
+         
+              <p>jQuery es una biblioteca de JavaScript popular que simplifica la manipulación y navegación del árbol DOM (Modelo de Objetos del Documento) en páginas web. Una de las características principales de jQuery es su capacidad para realizar selecciones precisas de elementos HTML y manipular su contenido o estilo.</p>
+              <p>El travesía descendiente, también conocido como "descendant traversal" en inglés, se refiere a la capacidad de jQuery para seleccionar y manipular elementos descendientes de un elemento específico dentro del árbol DOM.</p>
+
+              <p>Existen dos métodos en jQuery que permiten realizar la travesía descendiente:</p>
+              <br>
+              <li>children()</li>
+              <li>find()</li>
+              <br>
+              <h2>El método children()</h2>
+              <p>Devuelve todos los hijos directos del elemento seleccionado. Este método atraviesa un solo nivel hasta el árbol DOM.</p>
+              <h2>Ejemplo:</h2>
+        <div class="docs-code-block">
+          <pre class="shadow-lg rounded"><code class="javascript hljs">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              
+            &lt;head&gt;
+                &lt;style&gt;
+                    .descendants * {
+                        display: block;
+                        border: 2px solid lightgrey;
+                        color: lightgrey;
+                        padding: 5px;
+                        margin: 15px;
+                    }
+                &lt;/style&gt;
+                &lt;script src=
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;
+              &lt;/script&gt;
+                &lt;script&gt;
+                    $(document).ready(function() {
+                        $("div").children().css({
+                            "color": "green",
+                            "border": "2px solid blue"
+                        });
+                    });
+                &lt;/script&gt;
+            &lt;/head&gt;
+              
+            &lt;body&gt;
+              
+                &lt;div class="descendants" 
+                    style="width:500px;"&gt;
+                  current element
+                    &lt;p&gt;child
+                        &lt;span&gt;
+                          grandchild
+                      &lt;/span&gt;
+                    &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/body&gt;
+              
+            &lt;/html&gt;
+            
+
+
+            </code></pre>
+        </div>
+
+      <h2>Resultado</h2>                 
+        <div>
+          <img src="assets/img/EJ4.png" alt="Speaker 1" class="img-fluid">
+
+        </div>
+
+              <br>
+              <h2>El método find()</h2>
+              <p>Devuelve elementos descendientes del elemento seleccionado y hasta el último descendiente.</p>
+              <h2>Ejemplo:</h2>
+        <div class="docs-code-block">
+          <pre class="shadow-lg rounded"><code class="javascript hljs">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              
+            &lt;head&gt;
+                &lt;style&gt;
+                    .descendants * {
+                        display: block;
+                        border: 2px solid lightgrey;
+                        color: lightgrey;
+                        padding: 5px;
+                        margin: 15px;
+                    }
+                &lt;/style&gt;
+                &lt;script src=
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;
+              &lt;/script&gt;
+                &lt;script&gt;
+                    $(document).ready(function() {
+                        $("div").find("span").css({
+                            "color": "green",
+                            "border": "2px solid blue"
+                        });
+                    });
+                &lt;/script&gt;
+            &lt;/head&gt;
+              
+            &lt;body&gt;
+              
+                &lt;div class="descendants" 
+                    style="width:500px;"&gt;
+                  current element
+                    &lt;p&gt;child
+                        &lt;span&gt;grandchild&lt;/span&gt;
+                    &lt;/p&gt;
+                &lt;/div&gt;
+              
+            &lt;/body&gt;
+              
+            &lt;/html&gt;
+            
+
+
+            </code></pre>
+        </div>
+
+      <h2>Resultado</h2>                 
+        <div>
+          <img src="assets/img/EJ5.png" alt="Speaker 1" class="img-fluid">
+
+        </div>
+
+              
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main><!-- End #main -->
+
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>JQuery - Filtering</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: TheEvent
+  * Updated: Jun 18 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center header-inner">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+        <a href="index.html" class="scrollto"><img src="assets/img/logo.png" alt="" title=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html">Inicio</a></li>
+          
+          
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main" class="main-page">
+
+    <!-- ======= Speaker Details Sectionn ======= -->
+    <section id="speakers-details">
+      <div class="container">
+        <div class="section-header">
+          <h2>¿Qué es?</h2>
+          <p>Adentrate sobre el concepto básico de Filtering</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <img src="assets/img/speakers/1.1.png" alt="Speaker 1" class="img-fluid">
+          </div>
+
+          <div class="col-md-6">
+            <div class="details">
+              <h2>Filtering</h2>
+         
+              <p>El filtrado transversal en jQuery se utiliza para encontrar elementos HTML basados en su relación con los otros elementos. El filtrado es el proceso en jQuery que se utiliza para permitir encontrar un elemento particular con alguna condición o sin condición. Hay cinco tipos básicos de método de filtrado que se pueden utilizar para seleccionar un elemento que se enumera a continuación:</p>
+              
+              <li>first()</li>
+              <li>last()</li>
+              <li>eq()</li>
+              <li>filter()</li>
+              <li>not()</li>
+              
+              <h2>Método first()</h2>
+              <p>El método first() en jQuery se utiliza para seleccionar el primer elemento del grupo de elementos.</p>
+              <p>Su sintaxis es:</p>
+              <p>$(selector).first()</p>
+              
+
+              <h2>Ejemplo:</h2>
+        <div class="docs-code-block">
+          <pre class="shadow-lg rounded"><code class="javascript hljs">
+            
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              
+            &lt;head&gt;
+                &lt;title&gt;
+                    jQuery first() method
+                &lt;/title&gt;
+                &lt;script src=
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;
+                &lt;/script&gt;
+                  
+                &lt;!-- Script to use first() method --&gt;
+                &lt;script&gt;
+                    $(document).ready(function() {
+                        $("div").first().css("background-color", "lightgreen");
+                    });
+                &lt;/script&gt;
+            &lt;/head&gt;
+              
+            &lt;body&gt;
+                &lt;h1&gt;Welcome to GeeksforGeeks !!!&lt;/h1&gt;
+                  
+                &lt;div style="border: 1px solid green;"&gt;
+                    &lt;p&gt;This is the first statement.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;br&gt;
+              
+                &lt;div style="border: 1px solid green;"&gt;
+                    &lt;p&gt;This is the second statement.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;br&gt;
+              
+                &lt;div style="border: 1px solid green;"&gt;
+                    &lt;p&gt;This is the third statement.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;br&gt;
+              
+            &lt;/body&gt;
+              
+            &lt;/html&gt;
+
+
+            </code></pre>
+        </div>
+
+      <h2>Resultado</h2>                 
+        <div>
+          <img src="assets/img/EJ12.png" alt="Speaker 1" class="img-fluid">
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h2>Método last()</h2>
+              <p>El método last() en jQuery se utiliza para encontrar el último elemento de un grupo de elementos.</p>
+              <p>Su sintaxis es:</p>
+              <p>$(selector).last()</p>
+              
+
+              <h2>Ejemplo:</h2>
+        <div class="docs-code-block">
+          <pre class="shadow-lg rounded"><code class="javascript hljs">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              
+            &lt;head&gt;
+                &lt;script src=
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;
+                &lt;/script&gt;
+                  
+                &lt;!-- Script to use last() method --&gt;
+                &lt;script&gt;
+                    $(document).ready(function() {
+                        $("div").last().css("background-color", "lightgreen");
+                    });
+                &lt;/script&gt;
+            &lt;/head&gt;
+              
+            &lt;body&gt;
+                &lt;h1&gt;Welcome to GeeksforGeeks !!!&lt;/h1&gt;
+                &lt;div style="border: 1px solid green;"&gt;
+                    &lt;p&gt;This is the first statement.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;br&gt;
+              
+                &lt;div style="border: 1px solid green;"&gt;
+                    &lt;p&gt;This is the second statement.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;br&gt;
+              
+                &lt;div style="border: 1px solid green;"&gt;
+                    &lt;p&gt;This is the third statement.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;br&gt;
+              
+            &lt;/body&gt;
+              
+            &lt;/html&gt;
+            
+
+
+            </code></pre>
+        </div>
+
+      <h2>Resultado</h2>                 
+        <div>
+          <img src="assets/img/EJ13.png" alt="Speaker 1" class="img-fluid">
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <h2>Método eq()</h2>
+              <p>Este método se utiliza para seleccionar el elemento con el número de índice específico.</p>
+              <p>Su sintaxis es:</p>
+              <p>$(selector).eq(index_number)</p>
+              
+
+              <h2>Ejemplo:</h2>
+        <div class="docs-code-block">
+          <pre class="shadow-lg rounded"><code class="javascript hljs">
+            &lt;!DOCTYPE html&lt;
+            &lt;html&lt;
+              
+            &lt;head&lt;
+                &lt;script src=
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&lt;
+                &lt;/script&lt;
+                  
+                &lt;!-- Script to use eq() method --&lt;
+                &lt;script&lt;
+                    $(document).ready(function() {
+                        $("div").eq(1).css("background-color", "lightgreen");
+                    });
+                &lt;/script&lt;
+            &lt;/head&lt;
+              
+            &lt;body&lt;
+                &lt;h1&lt;Welcome to GeeksforGeeks !!!&lt;/h1&lt;
+                  
+                &lt;div style="border: 1px solid green;"&lt;
+                    &lt;p&lt;This is the first statement.&lt;/p&lt;
+                &lt;/div&lt;
+                &lt;br&lt;
+              
+                &lt;div style="border: 1px solid green;"&lt;
+                    &lt;p&lt;This is the second statement.&lt;/p&lt;
+                &lt;/div&lt;
+                &lt;br&lt;
+              
+                &lt;div style="border: 1px solid green;"&lt;
+                    &lt;p&lt;This is the third statement.&lt;/p&lt;
+                &lt;/div&lt;
+                &lt;br&lt;
+              
+            &lt;/body&lt;
+              
+            &lt;/html&lt;
+            
+
+
+            </code></pre>
+        </div>
+
+      <h2>Resultado</h2>                 
+        <div>
+          <img src="assets/img/EJ14.png" alt="Speaker 1" class="img-fluid">
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <h2>Método filter()</h2>
+              <p>Este método se utiliza para seleccionar el elemento con algunos criterios específicos.</p>
+              <p>Su sintaxis es:</p>
+              <p>$(selector).filter(parameter)</p>
+              
+
+              <h2>Ejemplo:</h2>
+        <div class="docs-code-block">
+          <pre class="shadow-lg rounded"><code class="javascript hljs">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              
+            &lt;head&gt;
+                &lt;script src=
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;
+                &lt;/script&gt;
+                  
+                &lt;!-- Script to use filter() method --&gt;
+                &lt;script&gt;
+                    $(document).ready(function() {
+                        $("div").filter(".demo").css("background-color", "lightgreen");
+                    });
+                &lt;/script&gt;
+            &lt;/head&gt;
+              
+            &lt;body&gt;
+                &lt;h1&gt;Welcome to GeeksforGeeks !!!&lt;/h1&gt;
+                  
+                &lt;div class="demo" style="border: 1px solid green;"&gt;
+                    &lt;p&gt;This is the first statement.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;br&gt;
+              
+                &lt;div class="demo" style="border: 1px solid green;"&gt;
+                    &lt;p&gt;This is the second statement.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;br&gt;
+              
+                &lt;div style="border: 1px solid green;"&gt;
+                    &lt;p&gt;This is the third statement.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;br&gt;
+              
+            &lt;/body&gt;
+              
+            &lt;/html&gt;
+            
+
+
+            </code></pre>
+        </div>
+
+      <h2>Resultado</h2>                 
+        <div>
+          <img src="assets/img/EJ15.png" alt="Speaker 1" class="img-fluid">
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h2>Método not()</h2>
+              <P>Este método se utiliza para seleccionar todos los elementos que no cumplen algunos criterios.</P>
+              <p>Su sintaxis es:</p>
+              <p>$(selector).not(parameter)</p>
+              
+
+              <h2>Ejemplo:</h2>
+        <div class="docs-code-block">
+          <pre class="shadow-lg rounded"><code class="javascript hljs">
+            
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              
+            &lt;head&gt;
+                &lt;script src=
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;
+                &lt;/script&gt;
+                  
+                &lt;!-- Script to use not() method --&gt;
+                &lt;script&gt;
+                    $(document).ready(function() {
+                        $("div").not(".demo").css("background-color", "lightgreen");
+                    });
+                &lt;/script&gt;
+            &lt;/head&gt;
+              
+            &lt;body&gt;
+                &lt;h1&gt;Welcome to GeeksforGeeks !!!&lt;/h1&gt;
+                  
+                &lt;div class="demo" style="border: 1px solid green;"&gt;
+                    &lt;p&gt;This is the first statement.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;br&gt;
+              
+                &lt;div class="demo" style="border: 1px solid green;"&gt;
+                    &lt;p&gt;This is the second statement.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;br&gt;
+              
+                &lt;div style="border: 1px solid green;"&gt;
+                    &lt;p&gt;This is the third statement.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;br&gt;
+              
+            &lt;/body&gt;
+              
+            &lt;/html&gt;
+
+
+            </code></pre>
+        </div>
+
+      <h2>Resultado</h2>                 
+        <div>
+          <img src="assets/img/EJ6.png" alt="Speaker 1" class="img-fluid">
+
+        </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main><!-- End #main -->
+
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
